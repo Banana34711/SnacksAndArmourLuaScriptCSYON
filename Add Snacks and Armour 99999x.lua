@@ -1,0 +1,38 @@
+MPX = PI 
+		PI = stats.get_int("MPPLY_LAST_MP_CHAR") 
+		if PI == 0 then MPX = "MP0_" else MPX = "MP1_" end
+
+local function SnacksandArmor()
+      stats.set_int(MPX .. "NO_BOUGHT_YUM_SNACKS", 99999)
+      stats.set_int(MPX .. "NO_BOUGHT_HEALTH_SNACKS", 99999)
+      stats.set_int(MPX .. "NO_BOUGHT_EPIC_SNACKS", 99999)
+      stats.set_int(MPX .. "NUMBER_OF_CHAMP_BOUGHT", 99999)
+      stats.set_int(MPX .. "NUMBER_OF_ORANGE_BOUGHT", 99999)
+      stats.set_int(MPX .. "NUMBER_OF_BOURGE_BOUGHT", 99999)
+      stats.set_int(MPX .. "CIGARETTES_BOUGHT", 99999)
+      stats.set_int(MPX .. "MP_CHAR_ARMOUR_1_COUNT", 99999)
+      stats.set_int(MPX .. "MP_CHAR_ARMOUR_2_COUNT", 99999)
+      stats.set_int(MPX .. "MP_CHAR_ARMOUR_3_COUNT", 99999)
+      stats.set_int(MPX .. "MP_CHAR_ARMOUR_4_COUNT", 99999)
+      stats.set_int(MPX .. "MP_CHAR_ARMOUR_5_COUNT", 99999)
+      stats.set_int(MPX .. "BREATHING_APPAR_BOUGHT", 99999)
+      end
+
+menu.register_hotkey(1, SnacksandArmor)
+
+menu.add_action("Add Snacks and Armour 99999x", function()
+	stats.set_int(MPX .. "NO_BOUGHT_YUM_SNACKS", 99999)
+      stats.set_int(MPX .. "NO_BOUGHT_HEALTH_SNACKS", 99999)
+      stats.set_int(MPX .. "NO_BOUGHT_EPIC_SNACKS", 99999)
+      stats.set_int(MPX .. "NUMBER_OF_CHAMP_BOUGHT", 99999)
+      stats.set_int(MPX .. "NUMBER_OF_ORANGE_BOUGHT", 99999)
+      stats.set_int(MPX .. "NUMBER_OF_BOURGE_BOUGHT", 99999)
+      stats.set_int(MPX .. "NUMBER_OF_SPRUNK_BOUGHT", 99999)
+      stats.set_int(MPX .. "CIGARETTES_BOUGHT", 99999)
+      stats.set_int(MPX .. "MP_CHAR_ARMOUR_1_COUNT", 99999)
+      stats.set_int(MPX .. "MP_CHAR_ARMOUR_2_COUNT", 99999)
+      stats.set_int(MPX .. "MP_CHAR_ARMOUR_3_COUNT", 99999)
+      stats.set_int(MPX .. "MP_CHAR_ARMOUR_4_COUNT", 99999)
+      stats.set_int(MPX .. "MP_CHAR_ARMOUR_5_COUNT", 99999)
+      stats.set_int(MPX .. "BREATHING_APPAR_BOUGHT", 99999) 
+end) 
